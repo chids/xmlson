@@ -97,7 +97,7 @@ public class XmlsonObject extends XmlsonMember {
 	 * @return {@code this}, for chaining purposes
 	 */
 	public XmlsonObject addNullProperty(String key) {
-		properties.put(new XmlsonString(key), new XmlsonNull());
+		properties.put(new XmlsonString(key), XmlsonNull.INSTANCE);
 		return this;
 	}
 

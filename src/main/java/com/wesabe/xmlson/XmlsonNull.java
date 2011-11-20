@@ -7,6 +7,10 @@ package com.wesabe.xmlson;
  */
 public class XmlsonNull extends XmlsonPrimitive<Object> {
 	
+    public static final XmlsonNull INSTANCE = new XmlsonNull();
+    
+    protected XmlsonNull() {}
+    
 	/* (non-Javadoc)
 	 * @see com.wesabe.xmlson.XmlsonPrimitive#getValue()
 	 */
